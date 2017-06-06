@@ -20,11 +20,11 @@ ext {
         junit : "4.12",
 
         gson : "2.6.1",
-        rxJava : "1.2.0", //
+        rxJava : "1.3.0", //
         rxAndroid : "1.2.1", //
-        retrofit : "2.1.0", //
-        retrofitConvertGson : "2.1.0", //
-        retrofitAdapterRxJava : "2.1.0", //
+        retrofit : "2.3.0", //
+        retrofitConvertGson : "2.3.0", //
+        retrofitAdapterRxJava : "2.3.0", //
         okhttp : "3.4.1",//
         okhttpLogInterceptor : "3.4.1",
         okio : "1.9.0", //
