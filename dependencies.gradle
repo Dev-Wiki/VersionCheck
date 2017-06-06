@@ -1,0 +1,64 @@
+ext {
+
+    //编译SDK版本
+    compileSdkVer = 25
+    //构建工具版本
+    buildToolsVer = "25.0.2"
+    //最低兼容版本
+    minSdkVer = 14
+    //测试过的版本
+    targetSdkVer = 25
+    //支持库的版本
+    supportVer = "25.0.0"
+    //JDK版本
+    sourceCompatVer = JavaVersion.VERSION_1_7
+    targetCompatVer = JavaVersion.VERSION_1_7
+
+    versions = [
+        supportVersion:"25.0.0",
+        supportMultidex : "1.0.1",
+        junit : "4.12",
+
+        gson : "2.6.1",
+        rxJava : "1.2.0", //
+        rxAndroid : "1.2.1", //
+        retrofit : "2.1.0", //
+        retrofitConvertGson : "2.1.0", //
+        retrofitAdapterRxJava : "2.1.0", //
+        okhttp : "3.4.1",//
+        okhttpLogInterceptor : "3.4.1",
+        okio : "1.9.0", //
+        wire : "2.1.2",
+
+        glide : "3.7.0",
+    ]
+    plugin_versions = [
+        versions: "0.15.0",
+    ]
+
+    libraries = [
+        supportAnnotations : "com.android.support:support-annotations:${versions.supportVersion}",
+        supportAppCompat : "com.android.support:appcompat-v7:${versions.supportVersion}",
+        supportRecyclerView : "com.android.support:recyclerview-v7:${versions.supportVersion}",
+        supportDesign : "com.android.support:design:${versions.supportVersion}",
+        supportCardView : "com.android.support:cardview-v7:${versions.supportVersion}",
+        supportMultidex : "com.android.support:multidex:${versions.supportMultidex}",
+        junit : "junit:junit:${versions.junit}",
+
+        gson : "com.google.code.gson:gson:${versions.gson}",
+        rxJava : "io.reactivex:rxjava:${versions.rxJava}", //
+        rxAndroid : "io.reactivex:rxandroid:${versions.rxAndroid}", //
+        retrofit : "com.squareup.retrofit2:retrofit:${versions.retrofit}", //
+        retrofitConvertGson : "com.squareup.retrofit2:converter-gson:${versions.retrofitConvertGson}", //
+        retrofitAdapterRxJava : "com.squareup.retrofit2:adapter-rxjava:${versions.retrofitAdapterRxJava}", //
+        okhttp : "com.squareup.okhttp3:okhttp:${versions.okhttp}",//
+        okhttpLogInterceptor : "com.squareup.okhttp3:logging-interceptor:${versions.okhttpLogInterceptor}",
+        okio : "com.squareup.okio:okio:${versions.okio}", //
+        wire : "com.squareup.wire:wire-runtime:${versions.wire}",
+
+        glide : "com.github.bumptech.glide:glide:${versions.glide}",
+    ]
+    gradle_plugins = [
+        versions: "com.github.ben-manes:gradle-versions-plugin:${plugin_versions.versions}",
+    ]
+}
